@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calclator</title>
+</head>
+<body>
+  <button
+  onclick="
+  if(plus==false)
+  {
+    fnum=fnum+'1';
+    console.log(`first number=${fnum}`);
+  }
+  else
+  {
+    snum=snum+'1';
+    console.log(`second number=${snum}`);
+  }
+  "
+  >1</button>
+  <button
+  onclick="
+  if(plus==false)
+  {
+    fnum=fnum+'2';
+    console.log(`first number=${fnum}`);
+  }
+  else
+  {
+    snum=snum+'2';
+    console.log(`second number=${snum}`);
+  }
+  "
+  >2</button>
+  <button
+  onclick="
+  if(plus==false)
+  {
+    fnum=fnum+'3';
+    console.log(`first number=${fnum}`);
+  }
+  else
+  {
+    snum=snum+'3';
+    console.log(`second number=${snum}`);
+  }
+  "
+  >3</button>
+  <button
+  onclick="
+  if(plus==false)
+  {
+    plus=true;
+  }
+  else
+  {
+    console.log('No more brain');
+  }
+  "
+  >+</button>
+  <button
+  onclick="
+  if(plus==true)
+  {
+    calculation=Number(fnum)+Number(snum);
+    console.log(`result=${calculation}`);
+  }
+  else
+  {
+    console.log('think fam think');
+  }
+  "
+  >=</button>
+  <script>
+    let calculation=0;
+    let plus=false;
+    let fnum=0;
+    let snum=0;
+  </script>
+</body>
+</html>
